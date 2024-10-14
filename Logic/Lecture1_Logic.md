@@ -1,3 +1,9 @@
+---
+id: Lecture1_Logic
+aliases: []
+tags: []
+---
+
 - What is Logic:
 
 - What is Abstract Argumentation:
