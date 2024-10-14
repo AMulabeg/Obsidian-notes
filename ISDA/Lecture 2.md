@@ -10,7 +10,7 @@ tags: []
         - Means of description:
             - #ER-models
                 - Entity relations
-                - #Relationship-type
+            - #Relationship-type
                 - #Attribute
             - Integrity Constraint:
                 - Local #IC's
@@ -64,4 +64,6 @@ tags: []
         - "Entity types can appear more than once in a relationship type"
             - "Accordingly, several edges are drawn"
             - Each edge corresponds to a role
-    
+        - Optional Attribute's
+            - Is not available for every entity
+                  <!-- TODO: Need to finish lecture 1, page 17 of prep-->

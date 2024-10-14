@@ -22,4 +22,4 @@ tags: []
     - Data system DBS = #Database managing system + #Database
     - #Information_Systems is a system that creates, manages and uses data
     - #Data_Analysis is the extraction of information from data using Mathematical methods
-        This will be further explained in [[Lecture 2]]
+        This will be FURther explained in [[Lecture 2]]
