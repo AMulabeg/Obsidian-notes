@@ -4,6 +4,6 @@ aliases: []
 tags: []
 ---
 
-1. [[Lecture1_BeKo|Introduction]]
+1. [[Lecture1_BeKo.md|Introduction]]
 
 
