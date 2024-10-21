@@ -12,10 +12,11 @@ tags: []
     -  Output: Print: "Top", when P contains the string "Hello, World", else print: "Flop"
 -  Remark: E has "A type of higher order",(which means that the input is text from a program P)
 -  Ex: 
-``` C
+```C
     main() {
       printf("Hello, world");
-    }```
+    }
+```
 
 - Does there exist a program E for a special input P? ->  Yes
 - Does there exist a program E for every program P? -> Not possible
@@ -75,7 +76,7 @@ tags: []
         -  $\Gamma$ is the new symbol that will be written in the ribbon (We are overwriting the currently written symbol)
         - $\{L,R,N\}$ is the possibility of movement after the machine is finished writing
 
-    - $\ z_0 \epsilon Z$ is the start status
+    - $\ z_0 \epsilon Z$ is the start state
     - $\boxed \; \epsilon \Gamma  \, \backslash \,  \Sigma$ is the blank symbol (its the current symbol)
     - E $\subseteq$ Z is a group of end states
 
