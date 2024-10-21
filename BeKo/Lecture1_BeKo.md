@@ -50,7 +50,7 @@ tags: []
 
 - Boundaries of Finite Automata
 
-    1. $\{ w \epsilon \{0, 1\}^* | w$ is a binary representation of a even number\} -> Is Finite due to there the language being limited by the amount of 0 and 1
+    1. $\{ w \epsilon \{0, 1\}^* | w$ is a binary representation of a even number$\}$ -> Is Finite due to there the language being limited by the amount of 0 and 1
     2. $\{\ a^n\ b^n \: |\: 0<=n<=1000\}$ -> I True because there is a boundary from 0 to 1000
 
     3. $\{\ a^n\ b^n \: |\: n>=0 \}$ -> Is False finite because the automata can not count the amount of a's and b's because there is no boundary to m
