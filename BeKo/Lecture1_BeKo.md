@@ -62,7 +62,7 @@ tags: []
 
 ### Turing Machines
 
-- A Turing Machine (DTM) is a septuple group M = $(Z, \Sigma , \Gamma , \delta, \ z_0, \boxed  \,, E)$ with:
+- A Turing Machine (DTM) is a septuple group M = $(Z, \Sigma , \Gamma , \delta, \ z_0, \square  \,, E)$ with:
     - Z is a non empty, finate group of states
     - $\Sigma$ is a non empty, finite alphabet of input characters with $Z\cap E = 0$ 
 
@@ -77,7 +77,7 @@ tags: []
         - $\{L,R,N\}$ is the possibility of movement after the machine is finished writing
 
     - $\ z_0 \epsilon Z$ is the start state
-    - $\boxed \; \epsilon \Gamma  \, \backslash \,  \Sigma$ is the blank symbol (its the current symbol)
+    - $\square \; \epsilon \Gamma  \, \backslash \,  \Sigma$ is the blank symbol (its the current symbol)
     - E $\subseteq$ Z is a group of end states
 
     
@@ -93,10 +93,10 @@ tags: []
 
 ##### Turing Machine Configuration
 
-- M = $(Z, \Sigma , \Gamma , \delta, \ z_0, \boxed  \,, E)$ is a TM. A configuration M is a word azb with a,b$\epsilon \Gamma$ and z $\epsilon$Z
+- M = $(Z, \Sigma , \Gamma , \delta, \ z_0, \square  \,, E)$ is a TM. A configuration M is a word azb with a,b$\epsilon \Gamma$ and z $\epsilon$Z
 
 - A start configuration of a word $x\epsilon\Sigma^*$ is $z_0x$
-- Let k = $a_1.... a_m\textbf zb_1......b_n$ be a configuration (if n = 0, then $b_1:= \boxed \;$) Then the following is true:
+- Let k = $a_1.... a_m\textbf zb_1......b_n$ be a configuration (if n = 0, then $b_1:= \square \;$) Then the following is true:
     - $k \vdash_M^0 k$
     - $k \vdash_M^1$ $a_1 ..... a_m\textbf z'cb_2 .... b_n$ if $\delta(z,b_1) = (z',c,N)$
 
@@ -104,7 +104,7 @@ tags: []
 
     - $k \vdash_M^1$ $a_1 ..... a_m-1\textbf z'a_mcb_2 .... b_n$ if $\delta(z,b_1) = (z',c,L)$ and m>0
 
-    - $k \vdash_M^1$ $\textbf z'\boxed \;cb_2 .... b_n$ if $\delta(z,b_1) = (z',c,L)$ and m=0
+    - $k \vdash_M^1$ $\textbf z'\square \;cb_2 .... b_n$ if $\delta(z,b_1) = (z',c,L)$ and m=0
 
 - k is holding (meaning it doesn't have a vaild configuration) if $\delta(z,b_1)=\bot$
 - k is accepted if $z\epsilon E$
