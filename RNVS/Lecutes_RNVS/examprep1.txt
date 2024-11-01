@@ -1,0 +1,23 @@
+
+  Packages:
+    Packages are used to store and send data from source to destination. This is usually communication between routers.
+    They are broken in smaller pieces. Most packets are stored before being sent. The packet switcher must first receive the who packet before sending it further.
+
+  Propagation Delay:
+    The time needed to propagate from one router to another. How much does it take for the first package to arrive.
+    
+    d=distance/speed
+
+  Transmition Delay:
+    The delay is L/R (Length of the package/ Bitrate). This is the amount of time required to push all the packet's bits into the switch/destination.
+
+    EOL-SOT = data size/data rate
+    
+  Processing Delay:
+    The sender needs time to process all the incoming packets. This is integrated into transmition delay.
+
+  Queueing Delay:
+    The packetes form a queue. The delay represent the time the packets wait in the queue before being transmited between nodes.
+  
+
+

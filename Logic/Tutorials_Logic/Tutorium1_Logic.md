@@ -4,6 +4,7 @@ aliases: []
 tags: []
 ---
 # Betweise
+
 - Direct Proof
 - Proof through Contradiction
 - Proof through Contrposition

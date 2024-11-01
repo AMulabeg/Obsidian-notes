@@ -23,7 +23,7 @@ tags: []
 
 ## Finite Automata
 
-- A deterministic finite automata (DFA) is a quintuple M = {Z,$\Sigma, \delta, z\_0, E$} with:
+- A deterministic finite automata (DFA) is a quintuple M = {Z,$\Sigma, \delta, \ z_0, E$} with:
     - Z is a non empty, finate group of states
     - $\Sigma$ is a non empty, finite alphabet of input characters with $Z\cap E = 0$ 
     - $\delta: Z\times \Sigma$ -> Is a partial transfer function
@@ -111,7 +111,6 @@ tags: []
 - Furthermore let $k \vdash_M^i+1 k'$ <=> $\exists_q k \vdash_M^1 q \vdash_M^i k'$ for all i and k $k \vdash_M^* k'$ <=>$\exists_{i\epsilon N} k\vdash_M^i k'$
 
  
-<!--TODO: Let a tutor expain this to you-->
 ###### Turing Machine example
 
 - Look 1.5
