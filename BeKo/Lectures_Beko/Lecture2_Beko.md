@@ -10,10 +10,10 @@ tags: []
     - Input -> Algorithm -> Output
      
     - Examle of Algorithms: Although people can intuitively calculate $\{a^n b^n | n>= 0\}$
-        - DFA:
+        - [[Lecture1_BeKo#Finite Automata|DFA]]:
             - Limited Resources (We do not have infinite storage)
 
-        - Turing Machine:
+        - [[Lecture1_BeKo#turing-machines|Turing Machine]]:
             - Storage and RAM are **NOT** limited
 
         - LOOP -/WHILE-/GOTO Programs:
@@ -28,7 +28,7 @@ tags: []
     - 1 (k=1):
     1. INPUT (n)
     2. WHILE true DO {}
-    ~> $\Omega: \mathbb N -> \mathbb N$ with $n |->\bot$
+    ~> $\Omega: \mathbb N$ -> $\mathbb N$ with $n$ |->$\bot$
 
 
 - Example 2:
@@ -85,6 +85,44 @@ f(n) := \begin{cases}
 \end{cases}
 $$
 
- 
-![[Pasted image 20241101145057.png]]
 
+
+![[Pasted image 20241104134307.png]]
+
+
+#### Multiband Turing Machines
+
+![[Pasted image 20241104134415.png]]
+
+- Transfer Function $\delta: (Z \backslash E) \times \Gamma^{k}$ -> $Z \times (\Gamma \times {L,R,N})^{k}$
+    - $\Gamma^{k}$ -> All symbols on the all k Turing Machines
+
+- Configuration: $\alpha_1 z \beta_1,\alpha_2 \circ \beta_1,......,\alpha_k \circ \beta_k$
+- [[Lecture1_BeKo#turing-machines|Start Configuration]]: $z_0 x_1, \circ x_2,..., \circ x_k$
+- Follow Configuration: $\vdash_M^1$ 
+
+- For $z \epsilon Z \; \text{and} \;z_e \epsilon E \;\text{and}\; \alpha_1.....\alpha_k,\beta_1.....,\beta_k \epsilon \Gamma^*$
+- Calculation of the Function:
+    - $BIN(x_1),BIN(x_2),....BIN(x_k) \vdash_M^* z_e BIN(f(x_1,....,x_k)), \alpha_2 \circ \beta_2,....\alpha_2 \circ \beta_2,...., \alpha_k \circ \beta_k$
+
+- Acceptance of the Language:
+    - $BIN(x_1),BIN(\square),....BIN(\square) \vdash_M^* z_e BIN(f(x_1,....,x_k)), \alpha_2 \circ \beta_2,....\alpha_2 \circ \beta_2,...., \alpha_k \circ \beta_k$
+
+![[Pasted image 20241104140358.png]]
+
+##### Multiband-TM Equivalence
+
+- For every k-band-TM M we have a single-band TM Q with T(M) = T(Q)
+    - This means that a k-band-TM can't fix issues that a single-band TM has, meaning they both have the same limitations
+
+
+![[Pasted image 20241104143324.png]]
+- For k-tape TM we have:
+    - We can simulate M with Q (fat tape)
+    - To simulate M, Q must have 2k "Lanes". One lane contains symbols from the $\Gamma$, the other lane contains only 0,1
+        - We read 2 lanes at the same time. When we read a 1, we add the represented symbol from the other lane
+	
+![[Pasted image 20241104143434.png]]
+
+- $\Gamma_{Q} = (\Gamma_M \times {0,1})^k$
+	- $S_M: (Z \backslash E) \times T_M^k$ -> $Z_M \times \{L,R,N\}^k$
