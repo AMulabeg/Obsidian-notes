@@ -34,9 +34,10 @@ tags: []
     - A DFA M = {Z,$\Sigma, \delta, z\_0, E$} accepts a word $W \epsilon E$ if $\hat{\delta}(z_0,w)\epsilon E$ 
 
     - The words from M are an accepted language:
-        - T(M):= {${x \epsilon \Sigma^{\ast} \;| \; \hat{\delta}(z_0,x)\epsilon E}$}
+        - T(M):= {${x \epsilon \Sigma^{\ast} |  \hat{\delta}(z_0,x)\epsilon E}$}
 
     Example:
+
 
     - M = ($\{z_0, z_1, z_2\},\{ 0,1\}, \delta ,z_0,\{ z_2\}$)
 	        $$
@@ -51,7 +52,7 @@ tags: []
 - Boundaries of Finite Automata
 
     1. {$\ w \epsilon \{0, 1\}^* | w$ is a binary representation of a even number} -> Is Finite due to there the language being limited by the amount of 0 and 1
-    2. $\{\ a^n\ b^n \: |\: 0<=n<=1000\}$ -> I True because there is a boundary from 0 to 1000
+    2. $\{\ a^n\ b^n \: |\: 0<=n<=1000\} \rightarrow$  I True because there is a boundary from 0 to 1000
 
     3. $\{\ a^n\ b^n \: |\: n>=0 \}$ -> Is False finite because the automata can not count the amount of a's and b's because there is no boundary to m
     4. $\{(abc)^n  \: |\:  n>=0\}$ -> Is True because the automata can count all be counted due to all nodes being counted at the same time # 1.1

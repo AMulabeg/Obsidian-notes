@@ -7,6 +7,9 @@ tags: []
 
 # Test
  
-```
-Test
+```C
+#include <stdio.h>
+void main(){
+    printf("Hello World");
+}
 ```

@@ -6,10 +6,10 @@ tags: []
 
 # Computability Concept
 
-- Intuitive Computablity:
-    - Input -> Algorithm -> Output
+- Intuitive Computablity: 
+    - Input $\rightarrow$ Algorithm $\rightarrow$ Output
      
-    - Examle of Algorithms: Although people can intuitively calculate $\{a^n b^n | n>= 0\}$
+    - Examle of Algorithms: Although people can intuitively calculate $\{a^n b^n | n \geq 0\}$
         - [[Lecture1_BeKo#Finite Automata|DFA]]:
             - Limited Resources (We do not have infinite storage)
 
@@ -21,14 +21,14 @@ tags: []
 
 
 - Definition:
-    - A (partial) function $f:\mathbb N^k -> \mathbb N$ is called computable when there is a finite algorithm $\mathbb A$, so that for all $n_1 ....., n_k, m \epsilon \mathbb N$, we have:
-        - $f(n_1,.....n_k) =m$ <==> for input $(n_1,....n_k)$, $\mathbb A$ stops after a finite time with the output m
+    - A (partial) function $f:\mathbb N^k \implies \mathbb N$ is called computable when there is a finite algorithm $\mathbb A$, so that for all $n_1 ....., n_k, m \epsilon \mathbb N$, we have:
+        - $f(n_1,.....n_k) =m$ $\Leftrightarrow$ for input $(n_1,....n_k)$, $\mathbb A$ stops after a finite time with the output m
 
 - Existential Example:
     - 1 (k=1):
     1. INPUT (n)
     2. WHILE true DO {}
-    ~> $\Omega: \mathbb N$ -> $\mathbb N$ with $n$ |->$\bot$
+    ~> $\Omega: \mathbb N$ $\rightarrow$ $\mathbb N$ with $n$ | $\rightarrow\bot$
 
 
 - Example 2:
@@ -59,11 +59,11 @@ $$
 
 ### Turing-Computability
 
-- A (eventually partial) function $f: \mathbb N^k$ -> $\mathbb N$ is turing-computable when a DTM M = $(Z, \Sigma,\Gamma,\delta, z_0, \square, E)$ exists so that for all $n_1,.....n_k, m \epsilon \mathbb N$ we have $f(n_1,....n_k)$ = m <==> for input $(n_1,...n_k)$  $\mathbb A$ terminates after finite time with the output m.
-    - <==> $\exists_{z \epsilon E}z_0$ BIN($n_1$)#...BIN($n_k$): 
+- A (eventually partial) function $f: \mathbb N^k \rightarrow \mathbb N$ is turing-computable when a DTM M = $(Z, \Sigma,\Gamma,\delta, z_0, \square, E)$ exists so that for all $n_1,.....n_k, m \epsilon \mathbb N$ we have $f(n_1,....n_k) = m \Longleftrightarrow$ for input (n_1,...n_k) $\mathbb A$ terminates after finite time with the output m.
+    - $\Longleftrightarrow \exists_{z \epsilon E}z_0$ BIN($n_1$)#...BIN($n_k$): 
     - With BIN being binary representation of a number
-- A (eventually partial) function $f: \Sigma^*$ ->$\Sigma^*$ is Turing computable when there is a $\text{DTM M} = (Z, \Sigma, \Gamma, \delta, z_0, \square, E)$ so that for all $x,y \epsilon \Sigma^*$ the following is true:
-    - $f(x)=y$ <==> $\exists_{z \epsilon E} z_0x \vdash_M^* zy$
+- A (eventually partial) function $f: \Sigma^* \rightarrow \Sigma^*$ is Turing computable when there is a $\text{DTM M} = (Z, \Sigma, \Gamma, \delta, z_0, \square, E)$ so that for all $x,y \epsilon \Sigma^*$ the following is true:
+    - $f(x)=y \Longleftrightarrow \exists_{z \epsilon E} z_0x \vdash_M^* zy$
 
 - A Language L is:
     - Decidable when $\mathbb X_L$ is computable

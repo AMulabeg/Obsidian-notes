@@ -3,7 +3,7 @@ id: ExamDay_logic
 aliases: []
 tags: []
 ---
-Erfulbarkeit
+
 
 ![[Pasted image 20241121172541.png]]
 

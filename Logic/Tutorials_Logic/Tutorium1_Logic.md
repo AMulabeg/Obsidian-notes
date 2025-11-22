@@ -11,7 +11,7 @@ tags: []
 - Full step Induction
 
 1. 
-    (i) $\phi_0$ = A $\vee \textlnot A$  -> Universally Valid; For every occupancy $\beta$, regardless if the input is 0 or 1, it will always be valid
+    (i) $\phi_0$ = A $\vee \textlnot A \rightarrow$ Universally Valid; For every occupancy $\beta$, regardless if the input is 0 or 1, it will always be valid
     (ii) $\phi_1$ = X $\wedge$ (Y $\vee$ Z) -> Fulfilable, but not Universally Valid; Cases like this happen because the formula can be fulfiable for certain combination of variables, but not all
     (iii) $\phi_2$ = (Y$\to$Z)$\wedge$(Y $\to$ Z$\vee$X))$\vee \textlnot$Z -> Universally Valid
         - We can prove this with using **contradiction** that this is Valid.

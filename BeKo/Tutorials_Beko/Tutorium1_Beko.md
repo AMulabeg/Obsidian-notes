@@ -20,16 +20,24 @@ tags: []
     \vdash aa z_2 acc 
     \vdash aa z_4 acc$$
 
-    c)  $a^* b^+$ <==> ($b^+ == bb^*$)
+    c)  $a^* b^+ \leftrightarrow (b^+ == bb^*$)
         $a^* b^i$  i>=1 
+        $a^{i+j} c^j$
     
     d) 
-	    $$ 
-	    z0bbb ⊢ az1bb ⊢ abz1b ⊢ abbz1□ ⊢ abz2bc ⊢ az3bbc ⊢ z3abbc ⊢ az0bbc ⊢ aaz1bc ⊢ aabz1c ⊢
-	    aabcz1□ ⊢ aabz2cc ⊢ aaz2bcc ⊢ az3abcc ⊢ aaz0bcc ⊢ aaaz1cc ⊢ aaacz1c ⊢ aaaccz1□ ⊢
-	    aaacz2cc ⊢ aaaz2ccc ⊢ aaz2accc ⊢ aaz4accc
-	    $$
 
-
-
+    4n + 2
+    bbb
         
+	$$ 
+	    z0bbb \vdash az1bb \vdash abz1b \vdash abbz1 \square \vdash abz2bc \vdash az3bbc \vdash z3abbc \vdash az0bbc \vdash aaz1bc \vdash aabz1c \vdash
+	    aabcz1 \square \vdash aabz2cc \vdash aaz2bcc \vdash az3abcc \vdash aaz0bcc \vdash aaaz1cc \vdash aaacz1c \vdash aaaccz1 \square \vdash
+	    aaacz2cc \vdash aaaz2ccc \vdash aaz2accc \vdash aaz4accc
+	$$
+
+    
+
+2. 
+
+
+![[Pasted image 20251030141311.png]]
